@@ -68,7 +68,7 @@ module.exports = NodeHelper.create({
       // get uptime
       async.apply(exec, 'cat /proc/uptime'),
       // get root free-space
-      async.apply(exec, "df -h|grep /dev/root|awk '{print $4}'"),
+      async.apply(exec, `df -h|grep ${payload.config.baseURLSyslog}|awk '{print $4}'`),
 
     ],
     function (err, res) {
