@@ -130,6 +130,12 @@ The following properties can be configured:
 				<br><b>Default value:</b> <code>http://127.0.0.1:8080/syslog</code>
 			</td>
 		</tr>
+    <tr>
+			<td><code>fsPath</code></td>
+			<td>Files system path for 'Available Space'.  Allows you to change the file system path to display when its not /dev/root.  To find your path, run <code>df -h</code> in the terminal.  NVMe drives will be similar to '/dev/nvme0n1p2 </a>
+				<br><b>Default value:</b> <code>/dev/root</code>
+			</td>
+		</tr>
 	</tbody>
 </table>
 
